@@ -31,6 +31,13 @@ function applyLanguage() {
     el.disabled = el.classList.contains('hidden');
   });
 
+  // Disable inactive-language form fields so only the visible ones are submitted
+  document.querySelectorAll('form input, form textarea').forEach(el => {
+    el.disabled = el.classList.contains('hidden');
+  });
+
+  buildArtworkSelect();
+
   const enBtn = document.getElementById('btn-en');
   const deBtn = document.getElementById('btn-de');
   if (enBtn && deBtn) {
@@ -332,11 +339,78 @@ function initNavToggle() {
   nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('is-open')));
 }
 
+/* ---------- Contact — artwork select ---------- */
+function buildArtworkSelect() {
+  const sel = document.getElementById('artwork-select');
+  if (!sel || typeof works === 'undefined') return;
+  const placeholder = currentLang === 'de'
+    ? 'Bezug auf ein bestimmtes Werk (optional)'
+    : 'Regarding a specific work (optional)';
+  const currentVal = sel.value;
+  sel.innerHTML = `<option value="">${placeholder}</option>` +
+    works.map(w => `<option value="${w.slug}"${w.slug === currentVal ? ' selected' : ''}>${t(w, 'title')}</option>`).join('');
+}
+
+/* ---------- Contact — AJAX form submission ---------- */
+function initContactForm() {
+  const form = document.querySelector('form[name="contact"]');
+  if (!form) return;
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = form.querySelector('[type="submit"]');
+    const savedHTML = btn.innerHTML;
+    btn.disabled = true;
+    btn.innerHTML = currentLang === 'de'
+      ? '<span>Wird gesendet…</span>'
+      : '<span>Sending…</span>';
+
+    try {
+      const res = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(form)).toString()
+      });
+      if (!res.ok) throw new Error('Network error');
+
+      const title = currentLang === 'de' ? 'Nachricht gesendet' : 'Message sent';
+      const msg = currentLang === 'de'
+        ? 'Vielen Dank für Ihre Nachricht. Ich werde mich so bald wie möglich bei Ihnen melden.'
+        : 'Thank you for reaching out. I will get back to you as soon as possible.';
+
+      const success = document.createElement('div');
+      success.className = 'form-success';
+      success.innerHTML = `
+        <svg viewBox="0 0 52 52" width="52" height="52" aria-hidden="true">
+          <circle cx="26" cy="26" r="24" fill="none" stroke="var(--accent)" stroke-width="1.6"/>
+          <path d="M15 27l8 8 14-16" fill="none" stroke="var(--accent)" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>${title}</h3>
+        <p>${msg}</p>`;
+      form.replaceWith(success);
+    } catch {
+      btn.disabled = false;
+      btn.innerHTML = savedHTML;
+      let errEl = form.querySelector('.form-error');
+      if (!errEl) {
+        errEl = document.createElement('p');
+        errEl.className = 'form-error';
+        btn.before(errEl);
+      }
+      errEl.textContent = currentLang === 'de'
+        ? 'Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.'
+        : 'Something went wrong. Please try again.';
+    }
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   applyLanguage();
   initNavToggle();
   initHome();
   initArtwork();
+  initContactForm();
 
   /* Re-scroll to URL hash after dynamic content settles.
      renderPortfolio() injects content with a 180 ms delay, which shifts

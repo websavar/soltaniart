@@ -780,10 +780,11 @@ section {
 }
 .contact form {
   display: grid;
-  gap: 18px;
+  gap: 6px;
 }
 .contact input,
-.contact textarea {
+.contact textarea,
+.contact select {
   width: 100%;
   background: transparent;
   border: 0;
@@ -797,18 +798,62 @@ section {
   outline: none;
   transition: border-color 0.25s ease;
 }
+.contact select {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238a8276' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  padding-right: 28px;
+}
+.contact select option {
+  background: var(--ink);
+  color: var(--paper);
+}
 .contact input::placeholder,
 .contact textarea::placeholder {
   color: var(--muted);
 }
 .contact input:focus,
-.contact textarea:focus {
+.contact textarea:focus,
+.contact select:focus {
   border-color: var(--accent);
   background: rgba(176, 138, 79, 0.02);
 }
 .contact textarea {
   resize: vertical;
   min-height: 140px;
+}
+
+.form-success {
+  text-align: center;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  animation: fadeUp 0.5s ease both;
+}
+.form-success h3 {
+  font-family: var(--serif);
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: var(--paper);
+  margin: 0;
+}
+.form-success p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  max-width: 380px;
+  line-height: 1.7;
+  margin: 0;
+}
+.form-error {
+  color: #e07070;
+  font-size: 0.85rem;
+  text-align: center;
+  margin: 0;
 }
 
 .btn {
