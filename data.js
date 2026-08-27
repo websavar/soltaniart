@@ -77,19 +77,7 @@ const works = [
     concept_de: 'Aus hochauflösenden Referenzen reproduziert mit derselben indirekten Öltechnik wie das Original: warme Imprimatur, monochrome Untermalung, dann über Wochen aufgebaute Farblasuren.'
   },
   {
-    id: 8, slug: 'girl-with-pearl-earring',
-    category: 'reproduction', title_en: 'Girl with a Pearl Earring', title_de: 'Mädchen mit dem Perlenohrgehänge',
-    subtitle_en: 'After Vermeer', subtitle_de: 'Nach Vermeer',
-    medium_en: 'Oil on linen', medium_de: 'Öl auf Leinen',
-    size: '40 × 45 cm', year: '2026', inProgress: true,
-    media: [{ type: 'image', src: 'images/reproduction/Girl_with_a_Pearl_Earring.jpg', alt: 'Girl with a Pearl Earring' }],
-    desc_en: 'Museum-quality reproduction in progress on premium linen with Winsor & Newton and Gamblin oils.',
-    desc_de: 'Museumqualitäts-Reproduktion in Arbeit auf Premium-Leinen mit Winsor & Newton und Gamblin Ölfarben.',
-    concept_en: 'Vermeer\u2019s pearl is built from only three values of lead white. The reproduction follows his original layering sequence — ultramarine veil over a warm flesh ground — to recreate the optical depth that gives the work its quiet life.',
-    concept_de: 'Vermeers Perle ist aus nur drei Werten Bleiweiß aufgebaut. Die Reproduktion folgt seiner ursprünglichen Schichtfolge – Ultramarinschleier über warmem Inkarnatgrund – um die optische Tiefe wiederherzustellen, die dem Werk sein stilles Leben gibt.'
-  },
-  {
-    id: 9, slug: 'starry-night',
+    id: 8, slug: 'starry-night',
     category: 'reproduction', title_en: 'The Starry Night', title_de: 'Die Sternennacht',
     subtitle_en: 'After Vincent Van Gogh · A Study in Brushwork, Light and Movement',
     subtitle_de: 'Nach Vincent Van Gogh · Eine Studie in Pinselführung, Licht und Bewegung',
@@ -109,9 +97,21 @@ const works = [
     concept_en: 'Vincent van Gogh’s <em>The Starry Night</em>, painted in 1889, is one of the most recognizable works in the history of Western art. Yet beyond its familiar imagery lies an extraordinary study of movement, rhythm, colour and the physical language of paint. \n This hand-painted reproduction is an attempt to engage with that language through the act of painting itself. Rather than reproducing the image as a flat visual copy, I focused on studying and reconstructing the character of Van Gogh’s brushwork — the direction and rhythm of each stroke, the interaction of complementary colours, the layering of paint, and the variations in surface texture that give the original its distinctive sense of movement. \n The work was developed over approximately two months, from the preparation of the canvas and initial layers through to the final refinement. Particular attention was given to the relationship between colour and impasto, allowing the surface to retain a physical quality that can be experienced not only from a distance, but also at close range. \n The painting is executed in oil on linen canvas, using professional-grade materials, with the painted composition continuing around the edges of the deep canvas. This allows the work to be presented without a traditional frame, while maintaining a continuous visual presence from every angle. \n This piece is conceived not simply as a reproduction of a famous image, but as a personal study of one of the most remarkable examples of painterly expression in modern art — an exploration of how colour, gesture and layers of paint can transform a familiar landscape into something almost alive.',
     concept_de: 'Vincent van Goghs <em>Die Sternennacht</em>, entstanden im Jahr 1889, gehört zu den bekanntesten Werken der westlichen Kunstgeschichte. Hinter der vertrauten Bildwelt verbirgt sich jedoch eine außergewöhnliche Auseinandersetzung mit Bewegung, Rhythmus, Farbe und der körperlichen Sprache der Malerei. \n Diese handgemalte Reproduktion entstand aus dem Versuch, diese Sprache durch den eigentlichen Malprozess zu erforschen. Dabei ging es nicht darum, das Gemälde lediglich als flaches Abbild wiederzugeben. Im Mittelpunkt standen vielmehr die Untersuchung und Rekonstruktion von van Goghs charakteristischem Pinselduktus – die Richtung und der Rhythmus der einzelnen Pinselstriche, das Zusammenspiel komplementärer Farben, der Aufbau der Farbschichten sowie die unterschiedlichen Strukturen der Oberfläche, die dem Original seine unverwechselbare Dynamik verleihen. \n Die Arbeit entstand über einen Zeitraum von etwa zwei Monaten – von der Vorbereitung der Leinwand und den ersten Farbschichten bis hin zur abschließenden Verfeinerung. Besonderes Augenmerk lag auf dem Zusammenspiel von Farbe und pastosem Farbauftrag, sodass die Oberfläche nicht nur aus der Distanz, sondern auch aus nächster Nähe eine spürbare physische Qualität bewahrt. \n Das Gemälde wurde in Öl auf Leinwand ausgeführt und mit hochwertigen Künstlerfarben gearbeitet. Die Komposition wurde zudem über die Kanten der tiefen Leinwand weitergeführt. Dadurch kann das Werk auch ohne einen klassischen Rahmen präsentiert werden und behält aus verschiedenen Blickwinkeln eine zusammenhängende visuelle Wirkung. \n Dieses Werk versteht sich daher nicht lediglich als Reproduktion eines berühmten Bildes, sondern als persönliche Studie eines der eindrucksvollsten Beispiele malerischer Ausdruckskraft der modernen Kunst – eine Auseinandersetzung damit, wie Farbe, Bewegung und aufgetragene Farbschichten eine vertraute Landschaft in etwas nahezu Lebendiges verwandeln können.',
     process: [
-      { type: 'video', src: 'https://www.youtube.com/watch?v=YIPvVeL22pI', alt: 'The Starry Night reproduction — Process 1' },
-      { type: 'image', src: 'images/reproduction/Van_Gogh-Starry_Night_process2.jpg', alt: 'The Starry Night reproduction — Process 2' }
+      { type: 'video', src: 'https://youtu.be/lahQ7y0ft6c', alt: 'The Starry Night reproduction — Process 1' },
+      { type: 'image', src: 'images/reproduction/Van_Gogh-Starry_Night_process.jpg', alt: 'The Starry Night reproduction — Process 2' }
     ]
+  },
+  {
+    id: 9, slug: 'girl-with-pearl-earring',
+    category: 'reproduction', title_en: 'Girl with a Pearl Earring', title_de: 'Mädchen mit dem Perlenohrgehänge',
+    subtitle_en: 'After Vermeer', subtitle_de: 'Nach Vermeer',
+    medium_en: 'Oil on linen', medium_de: 'Öl auf Leinen',
+    size: '40 × 45 cm', year: '2026', inProgress: true,
+    media: [{ type: 'image', src: 'images/reproduction/Girl_with_a_Pearl_Earring.jpg', alt: 'Girl with a Pearl Earring' }],
+    desc_en: 'Museum-quality reproduction in progress on premium linen with Winsor & Newton and Gamblin oils.',
+    desc_de: 'Museumqualitäts-Reproduktion in Arbeit auf Premium-Leinen mit Winsor & Newton und Gamblin Ölfarben.',
+    concept_en: 'Vermeer\u2019s pearl is built from only three values of lead white. The reproduction follows his original layering sequence — ultramarine veil over a warm flesh ground — to recreate the optical depth that gives the work its quiet life.',
+    concept_de: 'Vermeers Perle ist aus nur drei Werten Bleiweiß aufgebaut. Die Reproduktion folgt seiner ursprünglichen Schichtfolge – Ultramarinschleier über warmem Inkarnatgrund – um die optische Tiefe wiederherzustellen, die dem Werk sein stilles Leben gibt.'
   },
   {
     id: 10, slug: 'mona-lisa',
