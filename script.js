@@ -5,8 +5,32 @@
    - Renders portfolio + featured + artwork detail page
    ============================================================ */
 
-if (typeof tailwind !== 'undefined') {
-  tailwind.config = { theme: { extend: { colors: { accent: '#b08a4f' } } } };
+/* ---------- SEO / head helpers ---------- */
+const SITE_ORIGIN = 'https://soltaniart.com';
+
+function setMetaTag(selector, attr, value) {
+  const el = document.querySelector(selector);
+  if (el) el.setAttribute(attr, value);
+}
+
+function setCanonical(url) {
+  let link = document.querySelector('link[rel="canonical"]');
+  if (!link) {
+    link = document.createElement('link');
+    link.rel = 'canonical';
+    document.head.appendChild(link);
+  }
+  link.setAttribute('href', url);
+}
+
+function setRobots(content) {
+  let el = document.querySelector('meta[name="robots"]');
+  if (!el) {
+    el = document.createElement('meta');
+    el.setAttribute('name', 'robots');
+    document.head.appendChild(el);
+  }
+  el.setAttribute('content', content);
 }
 
 /* ---------- i18n state ---------- */
@@ -138,6 +162,8 @@ function renderArtworkPage() {
   const work = works.find(w => w.slug === slug);
 
   if (!work) {
+    document.title = currentLang === 'de' ? 'Werk nicht gefunden — Hamidreza Soltani' : 'Artwork not found — Hamidreza Soltani';
+    setRobots('noindex, follow');
     mount.innerHTML = `
       <div class="not-found">
         <h1 class="display">404</h1>
@@ -147,9 +173,18 @@ function renderArtworkPage() {
     return;
   }
 
-  document.title = `${t(work, 'title')} — Hamidreza Soltani`;
-  const metaDesc = document.querySelector('meta[name="description"]');
-  if (metaDesc) metaDesc.setAttribute('content', t(work, 'desc'));
+  const canonicalUrl = `${SITE_ORIGIN}/artwork.html?slug=${encodeURIComponent(work.slug)}`;
+  const imageUrl = new URL(work.media[0].src, `${SITE_ORIGIN}/`).toString();
+  const pageTitle = `${t(work, 'title')} — Hamidreza Soltani`;
+
+  document.title = pageTitle;
+  setRobots('index, follow, max-image-preview:large');
+  setCanonical(canonicalUrl);
+  setMetaTag('meta[name="description"]', 'content', t(work, 'desc'));
+  setMetaTag('meta[property="og:url"]', 'content', canonicalUrl);
+  setMetaTag('meta[property="og:title"]', 'content', pageTitle);
+  setMetaTag('meta[property="og:description"]', 'content', t(work, 'desc'));
+  setMetaTag('meta[property="og:image"]', 'content', imageUrl);
 
   const ld = {
     '@context': 'https://schema.org',
@@ -160,7 +195,8 @@ function renderArtworkPage() {
     artform: 'Painting',
     creator: { '@type': 'Person', name: 'Hamidreza Soltani' },
     dateCreated: work.year,
-    image: new URL(work.media[0].src, window.location.href).toString(),
+    image: imageUrl,
+    url: canonicalUrl,
     description: t(work, 'desc')
   };
   let ldTag = document.getElementById('artwork-ld');
@@ -171,6 +207,24 @@ function renderArtworkPage() {
     document.head.appendChild(ldTag);
   }
   ldTag.textContent = JSON.stringify(ld);
+
+  const breadcrumb = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_ORIGIN}/` },
+      { '@type': 'ListItem', position: 2, name: 'Portfolio', item: `${SITE_ORIGIN}/#portfolio` },
+      { '@type': 'ListItem', position: 3, name: t(work, 'title'), item: canonicalUrl }
+    ]
+  };
+  let bcTag = document.getElementById('breadcrumb-ld');
+  if (!bcTag) {
+    bcTag = document.createElement('script');
+    bcTag.type = 'application/ld+json';
+    bcTag.id = 'breadcrumb-ld';
+    document.head.appendChild(bcTag);
+  }
+  bcTag.textContent = JSON.stringify(breadcrumb);
 
   const categoryLabel = work.category === 'original'
     ? (currentLang === 'de' ? 'Original' : 'Original')
@@ -299,7 +353,7 @@ function mediaFigure(m) {
 
 function youtubeEmbedSrc(src) {
   const m = src.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
-  return m ? `https://www.youtube.com/embed/${m[1]}?rel=0` : null;
+  return m ? `https://www.youtube-nocookie.com/embed/${m[1]}?rel=0` : null;
 }
 
 function mediaSlideFigure(m) {
