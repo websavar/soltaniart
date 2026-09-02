@@ -11,7 +11,8 @@ const works = [
     size: '60 × 50 cm', year: '2024', inProgress: false,
     media: [
       { type: 'image', src: 'images/original/infinity.jpg', alt: 'Infinity — View 1' },
-      { type: 'image', src: 'images/original/infinity2.jpg', alt: 'Infinity — View 2' }
+      { type: 'image', src: 'images/original/infinity-closeup1.jpg', alt: 'Infinity — View 2' },
+      { type: 'image', src: 'images/original/infinity-closeup2.jpg', alt: 'Infinity — View 2' }
     ],
     desc_en: 'The central theme is love as the guiding force of existence — inspired by the verse "The heavens have no sanctuary but love."',
     desc_de: 'Das zentrale Thema ist die Liebe als lenkende Kraft des Daseins – inspiriert vom Vers „Der Himmel hat keine Zuflucht außer der Liebe."',
