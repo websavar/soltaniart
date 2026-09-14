@@ -20,7 +20,50 @@ const works = [
     concept_de: 'Infinity begann als eine Meditation über die nach innen gerichtete Bewegung der Hingabe. Anstatt ein fernes oder äußeres Universum darzustellen, lenkt das Werk den Blick nach innen – zu einem unsichtbaren Zentrum, in dem Liebe, Bewusstsein und Existenz zusammenkommen.\n\nDie Komposition scheint um ein verborgenes Zentrum zu kreisen und erzeugt ein Gefühl kontinuierlicher Bewegung, ohne einen definierten Anfang oder ein Ende. Warme Erdtöne verankern das Werk in der menschlichen Erfahrung, während ein zurückhaltender Schleier aus Kadmiumgold eine subtile Atmosphäre des Sakralen erzeugt. Das Licht erhellt kein konkretes Objekt; vielmehr deutet es auf einen Horizont hin, der nur innerhalb der Leinwand – und letztlich im Inneren des Betrachters – existiert.\n\nDas Werk ist in der persischen mystischen Vorstellung verwurzelt, dass das Universum außer der Liebe kein Heiligtum kennt. In diesem Sinne ist <em>Infinity</em> kein Abbild des Kosmos, sondern eine Reflexion über das innere Universum: jenen Ort, an dem Hingabe zur Selbsterkenntnis wird und die Suche nach etwas jenseits von uns selbst letztlich nach innen führt.\n\nDas in Öl auf Leinwand ausgeführte Werk basiert auf geschichteten Farbebenen, subtilen Übergängen und kontrollierter Leuchtkraft anstelle übermäßiger Detailfülle. Es möchte Raum für Kontemplation lassen – und jedem Betrachter ermöglichen, sein eigenes Zentrum innerhalb des Unendlichen zu entdecken.'
   },
   {
-    id: 4, slug: 'literary-reverie',
+    id: 2, slug: 'calligraphic-field', category: 'original', title_en: 'Calligraphic Field', title_de: 'Kalligrafisches Feld',
+    medium_en: 'Mixed media, acrylic, ink, printed matter and burlap and masking tape on paper', medium_de: 'Mischtechnik, Acryl, Tinte, Drucksachen, Jute und Klebeband auf Papier',
+    size: '30 × 40 cm', year: '2018', inProgress: false,
+    media: [
+      { type: 'image', src: 'images/original/Mixed_Media-Calligraphic_Field.jpg', alt: 'Calligraphic Field — View 1' },
+      { type: 'image', src: 'images/original/Mixed_Media-Calligraphic_Field-closeup1.jpg', alt: 'Calligraphic Field — View 2' },
+      { type: 'image', src: 'images/original/Mixed_Media-Calligraphic_Field-closeup2.jpg', alt: 'Calligraphic Field — View 3' }
+    ],
+    desc_en: '',
+    desc_de: '',
+    concept_en: 'In this mixed-media work, Persian Nastaliq calligraphy moves beyond language to become gesture, rhythm and visual structure. Fragments of printed text, raw burlap and layered marks create a tension between the refined movement of the script and the physical roughness of the materials. The work anticipates the calligraphic and material vocabulary developed further in the current Infinity series.',
+    concept_de: 'In diesem Mixed-Media-Werk geht die persische Nastaliq-Kalligrafie über die Sprache hinaus und wird zu Geste, Rhythmus und visueller Struktur. Fragmente gedruckter Texte, rohes Jutegewebe und geschichtete Markierungen erzeugen eine Spannung zwischen der feinen Bewegung der Schrift und der physischen Rauheit der Materialien. Das Werk antizipiert das kalligrafische und materielle Vokabular, das in der aktuellen Infinity-Serie weiterentwickelt wird.'
+  },
+  {
+    id: 3, slug: 'reversed-garden', category: 'original', title_en: 'Reversed Garden', title_de: 'Reversierter Garten',
+    medium_en: 'Oil transfer and printed text on glass ', medium_de: 'Öltransfer und gedruckter Text auf Glas',
+    size: '30 × 40 cm', year: '2019', inProgress: false,
+    media: [
+      { type: 'image', src: 'images/original/Mixed_Media_oil_on_glass.jpg', alt: 'Reversed Garden — View 1' },
+      { type: 'image', src: 'images/original/Mixed_Media_oil_on_glass-closeup1.jpg', alt: 'Reversed Garden — View 2' },
+    ],
+    desc_en: '',
+    desc_de: '',
+    concept_en: 'Created through an experimental transfer process, this work developed from wet oil paint, floral forms and fragments of printed text pressed against glass. The reversed lettering and partially transferred marks preserve traces of pressure, contact and chance. The work reflects an early interest in unstable surfaces and in the transformation of an image as it moves from one material support to another.',
+    concept_de: 'Durch einen experimentellen Transferprozess entstanden, entwickelte sich dieses Werk aus nasser Ölfarbe, floralen Formen und Fragmenten gedruckten Textes, die gegen Glas gepresst wurden. Die umgekehrten Buchstaben und teilweise übertragenen Markierungen bewahren Spuren von Druck, Kontakt und Zufall. Das Werk spiegelt ein frühes Interesse an instabilen Oberflächen und an der Transformation eines Bildes wider, wenn es von einem Materialträger auf einen anderen übergeht.'
+  },
+  {
+    id: 4, slug: 'fragments-of-memory',
+    category: 'original', title_en: 'Fragments of Memory', title_de: 'Fragmente der Erinnerung',
+    medium_en: 'Acrylic, printed photograph, newspaper and mixed media on paper', medium_de: 'Acryl, fotografischer Druck, Zeitung und Mischtechnik auf Papier',
+    size: '30 × 40 cm', year: '2019', inProgress: false,
+    media: [
+      { type: 'image', src: 'images/original/Mixed_Media-Fragments-of-Memory.jpg', alt: 'New Work' },
+      { type: 'image', src: 'images/original/Mixed_Media-Fragments-of-Memory-closeup1.jpg', alt: 'New Work — Close-up 1' },
+      { type: 'image', src: 'images/original/Mixed_Media-Fragments-of-Memory-closeup2.jpg', alt: 'New Work — Close-up 2' },
+      { type: 'image', src: 'images/original/Mixed_Media-Fragments-of-Memory-closeup3.jpg', alt: 'New Work — Close-up 3' },
+    ],
+    desc_en: '',
+    desc_de: '',
+    concept_en: 'This work combines an indistinct human figure with fragments of newspaper, printed imagery and gestural layers of acrylic paint. Rolling, rubbing and partial covering interrupt the legibility of both the figure and the text. The image approaches memory as something assembled from incomplete traces—simultaneously personal and collective, visible and continually at risk of disappearance.',
+    concept_de: 'Dieses Werk kombiniert eine unscharfe menschliche Figur mit Fragmenten von Zeitungen, gedruckten Bildern und gestischen Schichten aus Acrylfarbe. Rollen, Reiben und teilweise Abdecken unterbrechen die Lesbarkeit sowohl der Figur als auch des Textes. Das Bild nähert sich dem Gedächtnis als etwas, das aus unvollständigen Spuren zusammengesetzt ist – gleichzeitig persönlich und kollektiv, sichtbar und ständig vom Verschwinden bedroht.'
+  },
+  {
+    id: 5, slug: 'literary-reverie',
     category: 'original', title_en: 'Literary Reverie', title_de: 'Literarische Träumerei',
     medium_en: 'Mixed media on cardboard', medium_de: 'Mischtechnik auf Karton',
     size: 'A3', year: '2019', inProgress: false,
@@ -31,7 +74,7 @@ const works = [
     concept_de: 'Ein Porträt aus Fragmenten: aus alten Bänden gerissene Poesie, geschichtete Tinte und Pigment, gehalten von Gesso. Die Figur erscheint dort, wo die Sprache versagt – ein stilles Plädoyer für das Bild als letzten Leser jedes Textes.'
   },
   {
-    id: 3, slug: 'forest-reverie',
+    id: 6, slug: 'forest-reverie',
     category: 'original', title_en: 'Forest Reverie', title_de: 'Waldträumerei',
     medium_en: 'Oil on canvas', medium_de: 'Öl auf Leinwand',
     size: 'Approx. A4', year: '2018', inProgress: false,
@@ -42,7 +85,7 @@ const works = [
     concept_de: 'In einer einzigen Sitzung alla prima gemalt. Der Wald ist kein Ort, sondern ein Zustand der Aufmerksamkeit – das Festhalten von Licht zwischen zwei Bäumen an einem Berliner Nachmittag.'
   },
   {
-    id: 2, slug: 'decay',
+    id: 7, slug: 'decay',
     category: 'original', title_en: 'Decay', title_de: 'Verfall',
     medium_en: 'Oil on paper', medium_de: 'Öl auf Papier',
     size: 'A3', year: '2019', inProgress: false,
@@ -53,7 +96,7 @@ const works = [
     concept_de: 'Form weigert sich zu erstarren. Pigment wird abgekratzt, neu gesetzt und teilweise gelöscht – das Bild wird zum Rückstand seines eigenen Entstehens und spiegelt, wie Identität unter der Zeit abnutzt.'
   },
   {
-    id: 6, slug: 'last-bullet-1918',
+    id: 8, slug: 'last-bullet-1918',
     category: 'original', title_en: 'The Last Bullet — 1918', title_de: 'Die letzte Kugel — 1918',
     medium_en: 'Oil on canvas', medium_de: 'Öl auf Leinwand',
     size: '50 × 70 cm', year: '2018', inProgress: false,
@@ -66,7 +109,7 @@ const works = [
 
   /* ---- Museum Reproductions ---- */
   {
-    id: 7, slug: 'cabbies-at-market',
+    id: 9, slug: 'cabbies-at-market',
     category: 'reproduction', title_en: 'Cabbies at Market', title_de: 'Kutschen am Markt',
     subtitle_en: 'After G. Harvey', subtitle_de: 'Nach G. Harvey',
     medium_en: 'Oil on canvas', medium_de: 'Öl auf Leinwand',
@@ -78,7 +121,7 @@ const works = [
     concept_de: 'Aus hochauflösenden Referenzen reproduziert mit derselben indirekten Öltechnik wie das Original: warme Imprimatur, monochrome Untermalung, dann über Wochen aufgebaute Farblasuren.'
   },
   {
-    id: 8, slug: 'starry-night',
+    id: 10, slug: 'starry-night',
     category: 'reproduction', title_en: 'The Starry Night', title_de: 'Die Sternennacht',
     subtitle_en: 'After Vincent Van Gogh · A Study in Brushwork, Light and Movement',
     subtitle_de: 'Nach Vincent Van Gogh · Eine Studie in Pinselführung, Licht und Bewegung',
@@ -105,7 +148,7 @@ const works = [
     ]
   },
   {
-    id: 9, slug: 'girl-with-pearl-earring',
+    id: 11, slug: 'girl-with-pearl-earring',
     category: 'reproduction', title_en: 'Girl with a Pearl Earring', title_de: 'Mädchen mit dem Perlenohrgehänge',
     subtitle_en: 'After Vermeer', subtitle_de: 'Nach Vermeer',
     medium_en: 'Oil on linen', medium_de: 'Öl auf Leinen',
@@ -117,7 +160,7 @@ const works = [
     concept_de: 'Vermeers Perle ist aus nur drei Werten Bleiweiß aufgebaut. Die Reproduktion folgt seiner ursprünglichen Schichtfolge – Ultramarinschleier über warmem Inkarnatgrund – um die optische Tiefe wiederherzustellen, die dem Werk sein stilles Leben gibt.'
   },
   {
-    id: 10, slug: 'mona-lisa',
+    id: 12, slug: 'mona-lisa',
     category: 'reproduction', title_en: 'Mona Lisa', title_de: 'Mona Lisa',
     subtitle_en: 'After Leonardo · Sfumato in Thirty Translucent Layers',
     subtitle_de: 'Nach Leonardo · Sfumato in dreißig transluzenten Schichten',

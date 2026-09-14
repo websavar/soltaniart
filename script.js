@@ -400,9 +400,13 @@ function buildArtworkSelect() {
   const placeholder = currentLang === 'de'
     ? 'Bezug auf ein bestimmtes Werk (optional)'
     : 'Regarding a specific work (optional)';
+  const privateCommissionLabel = currentLang === 'de' ? 'Private Auftragsarbeit' : 'Private commission';
+  const otherLabel = currentLang === 'de' ? 'Sonstiges' : 'Other';
   const currentVal = sel.value;
   sel.innerHTML = `<option value="">${placeholder}</option>` +
-    works.map(w => `<option value="${w.slug}"${w.slug === currentVal ? ' selected' : ''}>${t(w, 'title')}</option>`).join('');
+    works.map(w => `<option value="${w.slug}"${w.slug === currentVal ? ' selected' : ''}>${t(w, 'title')}</option>`).join('') +
+    `<option value="private-commission"${currentVal === 'private-commission' ? ' selected' : ''}>${privateCommissionLabel}</option>` +
+    `<option value="other"${currentVal === 'other' ? ' selected' : ''}>${otherLabel}</option>`;
 }
 
 /* ---------- Contact — AJAX form submission ---------- */
