@@ -37,6 +37,16 @@ function setRobots(content) {
 const LANG_KEY = 'soltani.lang';
 let currentLang = (typeof localStorage !== 'undefined' && localStorage.getItem(LANG_KEY)) || 'en';
 
+/* Root-relative URL for an asset, so it resolves correctly from nested /artworks/{slug}/ pages */
+function assetUrl(src) {
+  if (/^https?:\/\//.test(src) || src.startsWith('/')) return src;
+  return `/${src}`;
+}
+
+function artworkUrl(slug) {
+  return `/artworks/${encodeURIComponent(slug)}/`;
+}
+
 /* ---------- Dataset ---------- */
 /* works[] is defined in data.js, loaded before this script. */
 
@@ -110,12 +120,12 @@ function artworkCard(work, index = 0) {
     ? `<span class="card-badge">${currentLang === 'de' ? 'In Arbeit' : 'In Progress'}</span>`
     : '';
   return `
-    <a href="artwork.html?slug=${encodeURIComponent(work.slug)}"
+    <a href="${artworkUrl(work.slug)}"
        class="art-card fade-in"
        style="animation-delay:${index * 70}ms"
        aria-label="${t(work, 'title')}">
       <figure class="art-card__media">
-        <img src="${cover.src}" alt="${t(work, 'title')}" loading="lazy">
+        <img src="${assetUrl(cover.src)}" alt="${t(work, 'title')}" loading="lazy">
         ${badge}
       </figure>
       <figcaption class="art-card__caption">
@@ -134,9 +144,9 @@ function renderFeatured() {
   const work = works.find(w => w.featured) || works[0];
   const cover = work.media[0];
   mount.innerHTML = `
-    <a href="artwork.html?slug=${encodeURIComponent(work.slug)}" class="featured">
+    <a href="${artworkUrl(work.slug)}" class="featured">
       <div class="featured__image">
-        <img src="${cover.src}" alt="${t(work, 'title')}">
+        <img src="${assetUrl(cover.src)}" alt="${t(work, 'title')}">
       </div>
       <div class="featured__caption">
         <span class="eyebrow">${currentLang === 'de' ? 'Aktuelles Werk' : 'Featured Work'}</span>
@@ -151,7 +161,10 @@ function renderFeatured() {
 
 /* ---------- Artwork detail page ---------- */
 function getSlugFromURL() {
-  return new URLSearchParams(window.location.search).get('slug');
+  const fromQuery = new URLSearchParams(window.location.search).get('slug');
+  if (fromQuery) return fromQuery;
+  const match = window.location.pathname.match(/\/artworks\/([^/]+)\/?/);
+  return match ? decodeURIComponent(match[1]) : null;
 }
 
 function renderArtworkPage() {
@@ -168,13 +181,13 @@ function renderArtworkPage() {
       <div class="not-found">
         <h1 class="display">404</h1>
         <p>${currentLang === 'de' ? 'Werk nicht gefunden.' : 'Artwork not found.'}</p>
-        <a class="cta" href="index.html#portfolio">${currentLang === 'de' ? '← Zurück zum Portfolio' : '← Back to portfolio'}</a>
+        <a class="cta" href="/#portfolio">${currentLang === 'de' ? '← Zurück zum Portfolio' : '← Back to portfolio'}</a>
       </div>`;
     return;
   }
 
-  const canonicalUrl = `${SITE_ORIGIN}/artwork.html?slug=${encodeURIComponent(work.slug)}`;
-  const imageUrl = new URL(work.media[0].src, `${SITE_ORIGIN}/`).toString();
+  const canonicalUrl = `${SITE_ORIGIN}${artworkUrl(work.slug)}`;
+  const imageUrl = new URL(assetUrl(work.media[0].src), `${SITE_ORIGIN}/`).toString();
   const pageTitle = `${t(work, 'title')} — Hamidreza Soltani`;
 
   document.title = pageTitle;
@@ -265,9 +278,9 @@ function renderArtworkPage() {
   mount.innerHTML = `
     <article class="artwork">
       <nav class="artwork__crumbs">
-        <a href="index.html">${currentLang === 'de' ? 'Start' : 'Home'}</a>
+        <a href="/">${currentLang === 'de' ? 'Start' : 'Home'}</a>
         <span>/</span>
-        <a href="index.html#portfolio">${currentLang === 'de' ? 'Portfolio' : 'Portfolio'}</a>
+        <a href="/#portfolio">${currentLang === 'de' ? 'Portfolio' : 'Portfolio'}</a>
         <span>/</span>
         <span class="artwork__crumbs-current">${t(work, 'title')}</span>
       </nav>
@@ -304,8 +317,8 @@ function renderArtworkPage() {
       </section>
 
       <div class="artwork__cta-row">
-        <a class="btn btn-primary" href="index.html#contact">${currentLang === 'de' ? 'Werk anfragen' : 'Inquire about this work'}</a>
-        <a class="btn btn-ghost" href="index.html#portfolio">${currentLang === 'de' ? '← Zurück zum Portfolio' : '← Back to portfolio'}</a>
+        <a class="btn btn-primary" href="/#contact">${currentLang === 'de' ? 'Werk anfragen' : 'Inquire about this work'}</a>
+        <a class="btn btn-ghost" href="/#portfolio">${currentLang === 'de' ? '← Zurück zum Portfolio' : '← Back to portfolio'}</a>
       </div>
     </article>
   `;
@@ -343,11 +356,11 @@ function renderArtworkPage() {
 function mediaFigure(m) {
   if (m.type === 'video') {
     return `<figure class="carousel__item">
-      <video src="${m.src}" controls preload="metadata" playsinline></video>
+      <video src="${assetUrl(m.src)}" controls preload="metadata" playsinline></video>
     </figure>`;
   }
   return `<figure class="carousel__item">
-    <img src="${m.src}" alt="${m.alt || ''}" loading="lazy">
+    <img src="${assetUrl(m.src)}" alt="${m.alt || ''}" loading="lazy">
   </figure>`;
 }
 
@@ -362,9 +375,9 @@ function mediaSlideFigure(m) {
     if (yt) {
       return `<figure class="artwork__slide-fig"><iframe src="${yt}" title="${m.alt || ''}" allowfullscreen loading="lazy"></iframe></figure>`;
     }
-    return `<figure class="artwork__slide-fig"><video src="${m.src}" controls preload="metadata" playsinline></video></figure>`;
+    return `<figure class="artwork__slide-fig"><video src="${assetUrl(m.src)}" controls preload="metadata" playsinline></video></figure>`;
   }
-  return `<figure class="artwork__slide-fig"><img src="${m.src}" alt="${m.alt || ''}" loading="lazy"></figure>`;
+  return `<figure class="artwork__slide-fig"><img src="${assetUrl(m.src)}" alt="${m.alt || ''}" loading="lazy"></figure>`;
 }
 
 /* ---------- Init ---------- */

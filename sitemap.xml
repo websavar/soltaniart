@@ -7,56 +7,74 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://soltaniart.com/artwork.html?slug=infinity</loc>
-    <lastmod>2026-08-28</lastmod>
+    <loc>https://soltaniart.com/artworks/infinity/</loc>
+    <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://soltaniart.com/artwork.html?slug=literary-reverie</loc>
-    <lastmod>2026-08-28</lastmod>
+    <loc>https://soltaniart.com/artworks/calligraphic-field/</loc>
+    <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://soltaniart.com/artwork.html?slug=forest-reverie</loc>
-    <lastmod>2026-08-28</lastmod>
+    <loc>https://soltaniart.com/artworks/reversed-garden/</loc>
+    <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://soltaniart.com/artwork.html?slug=decay</loc>
-    <lastmod>2026-08-28</lastmod>
+    <loc>https://soltaniart.com/artworks/fragments-of-memory/</loc>
+    <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://soltaniart.com/artwork.html?slug=last-bullet-1918</loc>
-    <lastmod>2026-08-28</lastmod>
+    <loc>https://soltaniart.com/artworks/literary-reverie/</loc>
+    <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://soltaniart.com/artwork.html?slug=cabbies-at-market</loc>
-    <lastmod>2026-08-28</lastmod>
+    <loc>https://soltaniart.com/artworks/forest-reverie/</loc>
+    <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://soltaniart.com/artwork.html?slug=starry-night</loc>
-    <lastmod>2026-08-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://soltaniart.com/artwork.html?slug=girl-with-pearl-earring</loc>
-    <lastmod>2026-08-28</lastmod>
+    <loc>https://soltaniart.com/artworks/decay/</loc>
+    <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://soltaniart.com/artwork.html?slug=mona-lisa</loc>
-    <lastmod>2026-08-28</lastmod>
+    <loc>https://soltaniart.com/artworks/last-bullet-1918/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soltaniart.com/artworks/cabbies-at-market/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soltaniart.com/artworks/starry-night/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soltaniart.com/artworks/girl-with-pearl-earring/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://soltaniart.com/artworks/mona-lisa/</loc>
+    <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Page not found — Hamidreza Soltani</title>
+  <meta name="description" content="The page you are looking for could not be found.">
+  <meta name="author" content="Hamidreza Soltani">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#b08a4f">
+
+  <link rel="icon" href="/images/favicon.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="/" class="brand">
+        <img src="/images/logo.jpeg" alt="">
+        <span class="brand__name">Hamidreza Soltani</span>
+      </a>
+
+      <button class="nav-burger" id="nav-burger" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="nav-links" class="nav-links">
+        <a href="/#featured"><span class="lang-en">Featured</span><span class="lang-de">Aktuelles</span></a>
+        <a href="/#about"><span class="lang-en">About</span><span class="lang-de">Über</span></a>
+        <a href="/#portfolio"><span class="lang-en">Portfolio</span><span class="lang-de">Portfolio</span></a>
+        <a href="/#process"><span class="lang-en">Process</span><span class="lang-de">Prozess</span></a>
+        <a href="/#cv"><span class="lang-en">CV</span><span class="lang-de">Lebenslauf</span></a>
+        <a href="/#contact"><span class="lang-en">Contact</span><span class="lang-de">Kontakt</span></a>
+      </nav>
+
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button onclick="switchLanguage('en')" id="btn-en" aria-label="English"><img src="/images/en.svg" alt="EN"></button>
+        <button onclick="switchLanguage('de')" id="btn-de" aria-label="Deutsch"><img src="/images/de.svg" alt="DE"></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="not-found">
+      <h1 class="display">404</h1>
+      <p><span class="lang-en">This page could not be found.</span><span class="lang-de hidden">Diese Seite konnte nicht gefunden werden.</span></p>
+      <a class="cta" href="/#portfolio"><span class="lang-en">← Back to portfolio</span><span class="lang-de hidden">← Zurück zum Portfolio</span></a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p><span class="lang-en">© 2026 Hamidreza Soltani · Berlin, Germany</span><span class="lang-de">© 2026 Hamidreza Soltani · Berlin, Deutschland</span></p>
+      <p><span class="lang-en">Original Paintings & Masterpiece Reproductions</span><span class="lang-de">Originalgemälde & handgemalte Meisterwerk-Reproduktionen</span></p>
+    </div>
+  </footer>
+
+  <script src="/data.js"></script>
+  <script src="/script.js"></script>
+</body>
+</html>

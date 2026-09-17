@@ -17,7 +17,8 @@ const works = [
     desc_en: 'The central theme is love as the guiding force of existence — inspired by the verse "The heavens have no sanctuary but love."',
     desc_de: 'Das zentrale Thema ist die Liebe als lenkende Kraft des Daseins – inspiriert vom Vers „Der Himmel hat keine Zuflucht außer der Liebe."',
     concept_en: 'Infinity began as a meditation on the inward motion of devotion. Rather than depicting a distant or external universe, the work turns the gaze inward, toward an unseen centre where love, consciousness, and existence converge.\n\nThe composition appears to orbit a hidden centre, creating a sense of continuous movement without a defined beginning or end. Warm earth tones ground the work in the human experience, while a restrained veil of cadmium gold introduces a subtle sense of the sacred. The light does not illuminate a physical object; it suggests a horizon that exists only within the canvas—and ultimately within the viewer.\n\nThe work is rooted in the Persian mystical idea that the universe has no sanctuary but love. In this sense, <em>Infinity</em> is not an image of the cosmos, but a reflection on the inner universe: the place where devotion becomes self-discovery, and where the search for something beyond ourselves ultimately turns inward.\n\nCreated in oil on canvas, the painting relies on layered color, subtle transitions, and controlled luminosity rather than excessive detail. Its intention is to leave space for contemplation—to allow each viewer to encounter their own centre within the infinite.',
-    concept_de: 'Infinity begann als eine Meditation über die nach innen gerichtete Bewegung der Hingabe. Anstatt ein fernes oder äußeres Universum darzustellen, lenkt das Werk den Blick nach innen – zu einem unsichtbaren Zentrum, in dem Liebe, Bewusstsein und Existenz zusammenkommen.\n\nDie Komposition scheint um ein verborgenes Zentrum zu kreisen und erzeugt ein Gefühl kontinuierlicher Bewegung, ohne einen definierten Anfang oder ein Ende. Warme Erdtöne verankern das Werk in der menschlichen Erfahrung, während ein zurückhaltender Schleier aus Kadmiumgold eine subtile Atmosphäre des Sakralen erzeugt. Das Licht erhellt kein konkretes Objekt; vielmehr deutet es auf einen Horizont hin, der nur innerhalb der Leinwand – und letztlich im Inneren des Betrachters – existiert.\n\nDas Werk ist in der persischen mystischen Vorstellung verwurzelt, dass das Universum außer der Liebe kein Heiligtum kennt. In diesem Sinne ist <em>Infinity</em> kein Abbild des Kosmos, sondern eine Reflexion über das innere Universum: jenen Ort, an dem Hingabe zur Selbsterkenntnis wird und die Suche nach etwas jenseits von uns selbst letztlich nach innen führt.\n\nDas in Öl auf Leinwand ausgeführte Werk basiert auf geschichteten Farbebenen, subtilen Übergängen und kontrollierter Leuchtkraft anstelle übermäßiger Detailfülle. Es möchte Raum für Kontemplation lassen – und jedem Betrachter ermöglichen, sein eigenes Zentrum innerhalb des Unendlichen zu entdecken.'
+    concept_de: 'Infinity begann als eine Meditation über die nach innen gerichtete Bewegung der Hingabe. Anstatt ein fernes oder äußeres Universum darzustellen, lenkt das Werk den Blick nach innen – zu einem unsichtbaren Zentrum, in dem Liebe, Bewusstsein und Existenz zusammenkommen.\n\nDie Komposition scheint um ein verborgenes Zentrum zu kreisen und erzeugt ein Gefühl kontinuierlicher Bewegung, ohne einen definierten Anfang oder ein Ende. Warme Erdtöne verankern das Werk in der menschlichen Erfahrung, während ein zurückhaltender Schleier aus Kadmiumgold eine subtile Atmosphäre des Sakralen erzeugt. Das Licht erhellt kein konkretes Objekt; vielmehr deutet es auf einen Horizont hin, der nur innerhalb der Leinwand – und letztlich im Inneren des Betrachters – existiert.\n\nDas Werk ist in der persischen mystischen Vorstellung verwurzelt, dass das Universum außer der Liebe kein Heiligtum kennt. In diesem Sinne ist <em>Infinity</em> kein Abbild des Kosmos, sondern eine Reflexion über das innere Universum: jenen Ort, an dem Hingabe zur Selbsterkenntnis wird und die Suche nach etwas jenseits von uns selbst letztlich nach innen führt.\n\nDas in Öl auf Leinwand ausgeführte Werk basiert auf geschichteten Farbebenen, subtilen Übergängen und kontrollierter Leuchtkraft anstelle übermäßiger Detailfülle. Es möchte Raum für Kontemplation lassen – und jedem Betrachter ermöglichen, sein eigenes Zentrum innerhalb des Unendlichen zu entdecken.',
+    updated: '2026-09-17'
   },
   {
     id: 2, slug: 'calligraphic-field', category: 'original', title_en: 'Calligraphic Field', title_de: 'Kalligrafisches Feld',
@@ -31,7 +32,8 @@ const works = [
     desc_en: '',
     desc_de: '',
     concept_en: 'In this mixed-media work, Persian Nastaliq calligraphy moves beyond language to become gesture, rhythm and visual structure. Fragments of printed text, raw burlap and layered marks create a tension between the refined movement of the script and the physical roughness of the materials. The work anticipates the calligraphic and material vocabulary developed further in the current Infinity series.',
-    concept_de: 'In diesem Mixed-Media-Werk geht die persische Nastaliq-Kalligrafie über die Sprache hinaus und wird zu Geste, Rhythmus und visueller Struktur. Fragmente gedruckter Texte, rohes Jutegewebe und geschichtete Markierungen erzeugen eine Spannung zwischen der feinen Bewegung der Schrift und der physischen Rauheit der Materialien. Das Werk antizipiert das kalligrafische und materielle Vokabular, das in der aktuellen Infinity-Serie weiterentwickelt wird.'
+    concept_de: 'In diesem Mixed-Media-Werk geht die persische Nastaliq-Kalligrafie über die Sprache hinaus und wird zu Geste, Rhythmus und visueller Struktur. Fragmente gedruckter Texte, rohes Jutegewebe und geschichtete Markierungen erzeugen eine Spannung zwischen der feinen Bewegung der Schrift und der physischen Rauheit der Materialien. Das Werk antizipiert das kalligrafische und materielle Vokabular, das in der aktuellen Infinity-Serie weiterentwickelt wird.',
+    updated: '2026-09-17'
   },
   {
     id: 3, slug: 'reversed-garden', category: 'original', title_en: 'Reversed Garden', title_de: 'Reversierter Garten',
@@ -44,7 +46,8 @@ const works = [
     desc_en: '',
     desc_de: '',
     concept_en: 'Created through an experimental transfer process, this work developed from wet oil paint, floral forms and fragments of printed text pressed against glass. The reversed lettering and partially transferred marks preserve traces of pressure, contact and chance. The work reflects an early interest in unstable surfaces and in the transformation of an image as it moves from one material support to another.',
-    concept_de: 'Durch einen experimentellen Transferprozess entstanden, entwickelte sich dieses Werk aus nasser Ölfarbe, floralen Formen und Fragmenten gedruckten Textes, die gegen Glas gepresst wurden. Die umgekehrten Buchstaben und teilweise übertragenen Markierungen bewahren Spuren von Druck, Kontakt und Zufall. Das Werk spiegelt ein frühes Interesse an instabilen Oberflächen und an der Transformation eines Bildes wider, wenn es von einem Materialträger auf einen anderen übergeht.'
+    concept_de: 'Durch einen experimentellen Transferprozess entstanden, entwickelte sich dieses Werk aus nasser Ölfarbe, floralen Formen und Fragmenten gedruckten Textes, die gegen Glas gepresst wurden. Die umgekehrten Buchstaben und teilweise übertragenen Markierungen bewahren Spuren von Druck, Kontakt und Zufall. Das Werk spiegelt ein frühes Interesse an instabilen Oberflächen und an der Transformation eines Bildes wider, wenn es von einem Materialträger auf einen anderen übergeht.',
+    updated: '2026-09-17'
   },
   {
     id: 4, slug: 'fragments-of-memory',
@@ -60,7 +63,8 @@ const works = [
     desc_en: '',
     desc_de: '',
     concept_en: 'This work combines an indistinct human figure with fragments of newspaper, printed imagery and gestural layers of acrylic paint. Rolling, rubbing and partial covering interrupt the legibility of both the figure and the text. The image approaches memory as something assembled from incomplete traces—simultaneously personal and collective, visible and continually at risk of disappearance.',
-    concept_de: 'Dieses Werk kombiniert eine unscharfe menschliche Figur mit Fragmenten von Zeitungen, gedruckten Bildern und gestischen Schichten aus Acrylfarbe. Rollen, Reiben und teilweise Abdecken unterbrechen die Lesbarkeit sowohl der Figur als auch des Textes. Das Bild nähert sich dem Gedächtnis als etwas, das aus unvollständigen Spuren zusammengesetzt ist – gleichzeitig persönlich und kollektiv, sichtbar und ständig vom Verschwinden bedroht.'
+    concept_de: 'Dieses Werk kombiniert eine unscharfe menschliche Figur mit Fragmenten von Zeitungen, gedruckten Bildern und gestischen Schichten aus Acrylfarbe. Rollen, Reiben und teilweise Abdecken unterbrechen die Lesbarkeit sowohl der Figur als auch des Textes. Das Bild nähert sich dem Gedächtnis als etwas, das aus unvollständigen Spuren zusammengesetzt ist – gleichzeitig persönlich und kollektiv, sichtbar und ständig vom Verschwinden bedroht.',
+    updated: '2026-09-17'
   },
   {
     id: 5, slug: 'literary-reverie',
@@ -71,7 +75,8 @@ const works = [
     desc_en: 'Female figure with Persian calligraphy, collage and torn text — themes of literature and memory.',
     desc_de: 'Weibliche Figur mit persischer Kalligrafie, Collage und zerrissenem Text — Themen von Literatur und Erinnerung.',
     concept_en: 'A portrait built from fragments: poetry torn from old volumes, layered ink, and pigment held together by gesso. The figure emerges where language fails — a quiet argument for the image as the final reader of every text.',
-    concept_de: 'Ein Porträt aus Fragmenten: aus alten Bänden gerissene Poesie, geschichtete Tinte und Pigment, gehalten von Gesso. Die Figur erscheint dort, wo die Sprache versagt – ein stilles Plädoyer für das Bild als letzten Leser jedes Textes.'
+    concept_de: 'Ein Porträt aus Fragmenten: aus alten Bänden gerissene Poesie, geschichtete Tinte und Pigment, gehalten von Gesso. Die Figur erscheint dort, wo die Sprache versagt – ein stilles Plädoyer für das Bild als letzten Leser jedes Textes.',
+    updated: '2026-09-17'
   },
   {
     id: 6, slug: 'forest-reverie',
@@ -81,8 +86,9 @@ const works = [
     media: [{ type: 'image', src: 'images/original/Forest-Reverie.jpg', alt: 'Forest Reverie' }],
     desc_en: 'Expressive imaginary landscape with dynamic brushwork and atmospheric woodland scene.',
     desc_de: 'Ausdrucksstarke imaginäre Landschaft mit dynamischer Pinselführung und atmosphärischer Waldszene.',
-    concept_en: 'Painted alla prima in a single sitting. The forest is not a place but a state of attention — a record of light caught between two trees on a Berlin afternoon.',
-    concept_de: 'In einer einzigen Sitzung alla prima gemalt. Der Wald ist kein Ort, sondern ein Zustand der Aufmerksamkeit – das Festhalten von Licht zwischen zwei Bäumen an einem Berliner Nachmittag.'
+    concept_en: 'Painted from imagination, Forest Reverie treats landscape as an internal state rather than a specific place. Rapid, gestural marks dissolve trees, ground and reflected light into a shifting field between recognition and memory.',
+    concept_de: 'Aus der Vorstellung gemalt, versteht Forest Reverie die Landschaft als inneren Zustand und nicht als konkreten Ort. Schnelle, gestische Spuren lösen Bäume, Boden und reflektiertes Licht in ein bewegliches Feld zwischen Wiedererkennen und Erinnerung auf.',
+    updated: '2026-09-17'
   },
   {
     id: 7, slug: 'decay',
@@ -93,7 +99,8 @@ const works = [
     desc_en: 'Contemporary gestural abstract expressionism exploring the inevitable process of decay and dissolution of identity.',
     desc_de: 'Zeitgenössischer gestischer abstrakter Expressionismus, der den unvermeidlichen Prozess des Verfalls und der Auflösung der Identität erforscht.',
     concept_en: 'Form refuses to settle. Pigment is scraped, restated and partially erased — the painting becomes a residue of its own making, mirroring how identity wears under time.',
-    concept_de: 'Form weigert sich zu erstarren. Pigment wird abgekratzt, neu gesetzt und teilweise gelöscht – das Bild wird zum Rückstand seines eigenen Entstehens und spiegelt, wie Identität unter der Zeit abnutzt.'
+    concept_de: 'Form weigert sich zu erstarren. Pigment wird abgekratzt, neu gesetzt und teilweise gelöscht – das Bild wird zum Rückstand seines eigenen Entstehens und spiegelt, wie Identität unter der Zeit abnutzt.',
+    updated: '2026-09-17'
   },
   {
     id: 8, slug: 'last-bullet-1918',
@@ -104,7 +111,8 @@ const works = [
     desc_en: 'A young US Army soldier on the final day of the First World War — exhaustion, relief and the weight of survival.',
     desc_de: 'Ein junger US-Soldat am letzten Tag des Ersten Weltkriegs — Erschöpfung, Erleichterung und das Gewicht des Überlebens.',
     concept_en: 'A history painting in a contemporary key. The figure is centred but unheroic; the palette is mud, brass and bone. The bullet referenced in the title is the one that never had to be fired.',
-    concept_de: 'Ein Historienbild in zeitgenössischer Tonlage. Die Figur steht zentral, doch unheroisch; die Palette: Schlamm, Messing, Knochen. Die im Titel genannte Kugel ist jene, die nie abgefeuert werden musste.'
+    concept_de: 'Ein Historienbild in zeitgenössischer Tonlage. Die Figur steht zentral, doch unheroisch; die Palette: Schlamm, Messing, Knochen. Die im Titel genannte Kugel ist jene, die nie abgefeuert werden musste.',
+    updated: '2026-09-17'
   },
 
   /* ---- Museum Reproductions ---- */
@@ -118,7 +126,8 @@ const works = [
     desc_en: 'A faithful, hand-painted reproduction of Harvey\u2019s nostalgic gas-lit European market at dusk.',
     desc_de: 'Eine getreue, handgemalte Reproduktion von Harveys nostalgischem, gasbeleuchtetem europäischem Markt in der Dämmerung.',
     concept_en: 'Reproduced from high-resolution reference using the same indirect oil technique as the original: a warm imprimatura, monochrome underpainting, then colour glazes built up over weeks.',
-    concept_de: 'Aus hochauflösenden Referenzen reproduziert mit derselben indirekten Öltechnik wie das Original: warme Imprimatur, monochrome Untermalung, dann über Wochen aufgebaute Farblasuren.'
+    concept_de: 'Aus hochauflösenden Referenzen reproduziert mit derselben indirekten Öltechnik wie das Original: warme Imprimatur, monochrome Untermalung, dann über Wochen aufgebaute Farblasuren.',
+    updated: '2026-09-17'
   },
   {
     id: 10, slug: 'starry-night',
@@ -145,7 +154,8 @@ const works = [
       { type: 'image', src: 'images/reproduction/Van_Gogh-Starry_Night_process.jpg', alt: 'The Starry Night reproduction — Process 2' },
       { type: 'image', src: 'images/reproduction/Van_Gogh-Starry_Night-process_signature.jpg', alt: 'The Starry Night reproduction — Process 2' },
       { type: 'image', src: 'images/reproduction/Van_Gogh-Starry_Night-process_signature2.jpg', alt: 'The Starry Night reproduction — Process 2' },
-    ]
+    ],
+    updated: '2026-09-17'
   },
   {
     id: 11, slug: 'girl-with-pearl-earring',
@@ -157,19 +167,26 @@ const works = [
     desc_en: 'Museum-quality reproduction in progress on premium linen with Winsor & Newton and Gamblin oils.',
     desc_de: 'Museumqualitäts-Reproduktion in Arbeit auf Premium-Leinen mit Winsor & Newton und Gamblin Ölfarben.',
     concept_en: 'Vermeer\u2019s pearl is built from only three values of lead white. The reproduction follows his original layering sequence — ultramarine veil over a warm flesh ground — to recreate the optical depth that gives the work its quiet life.',
-    concept_de: 'Vermeers Perle ist aus nur drei Werten Bleiweiß aufgebaut. Die Reproduktion folgt seiner ursprünglichen Schichtfolge – Ultramarinschleier über warmem Inkarnatgrund – um die optische Tiefe wiederherzustellen, die dem Werk sein stilles Leben gibt.'
+    concept_de: 'Vermeers Perle ist aus nur drei Werten Bleiweiß aufgebaut. Die Reproduktion folgt seiner ursprünglichen Schichtfolge – Ultramarinschleier über warmem Inkarnatgrund – um die optische Tiefe wiederherzustellen, die dem Werk sein stilles Leben gibt.',
+    updated: '2026-09-17'
   },
   {
     id: 12, slug: 'mona-lisa',
     category: 'reproduction', title_en: 'Mona Lisa', title_de: 'Mona Lisa',
-    subtitle_en: 'After Leonardo · Sfumato in Thirty Translucent Layers',
-    subtitle_de: 'Nach Leonardo · Sfumato in dreißig transluzenten Schichten',
+    subtitle_en: 'After Leonardo da Vinci — A Study in Sfumato, Light and Transition',
+    subtitle_de: 'Nach Leonardo da Vinci — Eine Studie zu Sfumato, Licht und Übergängen',
     medium_en: 'Oil on linen', medium_de: 'Öl auf Leinen',
     size: '60 × 80 cm', year: '2026', inProgress: true,
     media: [{ type: 'image', src: 'images/reproduction/Mona-lisa.jpg', alt: 'Mona Lisa' }],
-    desc_en: 'Museum-quality reproduction in progress, painted in Leonardo\u2019s sfumato method on archival linen.',
-    desc_de: 'Museumqualitäts-Reproduktion in Arbeit, in Leonardos Sfumato-Technik auf archivfestem Leinen gemalt.',
-    concept_en: 'The sfumato is achieved with up to thirty translucent oil glazes, each only microns thick, blended with finger and soft sable. The wood-panel feel of the original is approached on tightly woven Belgian linen.',
-    concept_de: 'Das Sfumato entsteht aus bis zu dreißig transluzenten Öllasuren von wenigen Mikrometern Dicke, mit Fingerspitze und weichem Zobel verblendet. Der Holztafel-Charakter des Originals wird auf eng gewebtem belgischem Leinen angenähert.'
+    desc_en: 'An oil-painting study in progress examining Leonardo da Vinci’s sfumato: soft transitions of tone and atmosphere without abrupt contours.',
+    desc_de: 'Eine Ölmalereistudie in Arbeit, die Leonardo da Vincis Sfumato untersucht: weiche Übergänge von Ton und Atmosphäre ohne abrupte Konturen.',
+    concept_en: 'Rather than reproducing a single present-day photograph, this study takes Leonardo da Vinci’s Mona Lisa in the Louvre as its primary reference and uses the Prado workshop version as a comparative source. The Louvre painting’s present appearance has been shaped by age, varnish, and its conservation history; the Prado version, created in Leonardo’s workshop in close relation to the original composition, offers additional evidence for colour relationships and details that are now less clearly legible. The aim is neither to copy the Prado version nor to invent a hypothetical restoration, but to interpret the Louvre composition through sustained observation, material research, and practical study of sfumato.',
+    concept_de: 'Diese Studie orientiert sich nicht an einer einzigen heutigen Fotografie. Hauptreferenz ist Leonardo da Vincis Mona Lisa im Louvre; die Werkstattfassung im Prado dient als vergleichende Quelle. Das heutige Erscheinungsbild des Louvre-Gemäldes ist durch Alterung, Firnis und seine konservatorische Geschichte geprägt. Die Prado-Fassung, die in Leonardos Werkstatt in enger Verbindung mit der ursprünglichen Komposition entstand, liefert ergänzende Hinweise auf Farbbeziehungen und heute weniger deutlich lesbare Details. Ziel ist weder eine Kopie der Prado-Fassung noch die Erfindung einer hypothetischen Restaurierung, sondern eine malerische Interpretation der Louvre-Komposition durch genaue Beobachtung, Materialrecherche und die praktische Untersuchung des Sfumato.',
+    updated: '2026-09-17'
   }
 ];
+
+/* Expose dataset to Node build scripts without affecting the browser global */
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = works;
+}

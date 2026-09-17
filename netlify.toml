@@ -1,10 +1,122 @@
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+# This file is COMMITTED SOURCE CONFIGURATION. Netlify reads netlify.toml
+# BEFORE running the build command, so it must already contain a redirect for
+# every artwork slug — a redirect generated during the build itself would not
+# take effect until the next deployment.
+#
+# To add/rename/remove an artwork: update data.js, then run
+#   node scripts/build.js --update-redirects
+# locally, review the diff, and commit this file. The normal build (also run
+# by Netlify, see [build] below) only validates this file against data.js and
+# fails loudly if a slug's redirect is missing.
 
 [build]
+  command = "node scripts/build.js"
   publish = "."
+
+# --- Canonical homepage: /index.html -> / ---
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+# --- Legacy query-based artwork URLs -> clean canonical routes ---
+[[redirects]]
+  from = "/artwork.html"
+  query = {slug = "infinity"}
+  to = "/artworks/infinity/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/artwork.html"
+  query = {slug = "calligraphic-field"}
+  to = "/artworks/calligraphic-field/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/artwork.html"
+  query = {slug = "reversed-garden"}
+  to = "/artworks/reversed-garden/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/artwork.html"
+  query = {slug = "fragments-of-memory"}
+  to = "/artworks/fragments-of-memory/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/artwork.html"
+  query = {slug = "literary-reverie"}
+  to = "/artworks/literary-reverie/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/artwork.html"
+  query = {slug = "forest-reverie"}
+  to = "/artworks/forest-reverie/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/artwork.html"
+  query = {slug = "decay"}
+  to = "/artworks/decay/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/artwork.html"
+  query = {slug = "last-bullet-1918"}
+  to = "/artworks/last-bullet-1918/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/artwork.html"
+  query = {slug = "cabbies-at-market"}
+  to = "/artworks/cabbies-at-market/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/artwork.html"
+  query = {slug = "starry-night"}
+  to = "/artworks/starry-night/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/artwork.html"
+  query = {slug = "girl-with-pearl-earring"}
+  to = "/artworks/girl-with-pearl-earring/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/artwork.html"
+  query = {slug = "mona-lisa"}
+  to = "/artworks/mona-lisa/"
+  status = 301
+  force = true
+
+# --- /artwork.html with no slug, or a slug that isn't listed above: real 404 ---
+[[redirects]]
+  from = "/artwork.html"
+  to = "/404.html"
+  status = 404
+  force = true
+
+# --- /artworks/{slug}/ for an unknown slug: real 404 (known slugs are served as static files and take precedence) ---
+[[redirects]]
+  from = "/artworks/*"
+  to = "/404.html"
+  status = 404
 
 # --- Security headers (applied to every response) ---
 [[headers]]
@@ -20,4 +132,3 @@
   for = "/images/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
-

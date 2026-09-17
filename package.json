@@ -1,0 +1,9 @@
+{
+  "name": "soltaniart-site",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static build for soltaniart.com — generates crawlable /artworks/{slug}/ pages, sitemap.xml and netlify.toml from data.js",
+  "scripts": {
+    "build": "node scripts/build.js"
+  }
+}
